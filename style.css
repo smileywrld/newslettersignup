@@ -1,0 +1,333 @@
+:root {
+  --dark: hsl(234, 29%, 20%);
+  --light: hsl(0, 0%, 100%);
+  --main-bg: hsl(235, 18%, 26%);
+  --active: hsl(4, 100%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--main-bg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container {
+  background-color: white;
+  width: max-content;
+  height: fit-content;
+  padding: 1%;
+  border-radius: 20px;
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-side {
+  margin: 4%;
+}
+
+.text-side h1 {
+  font-size: 3rem;
+  font-family: Roboto;
+  margin-bottom: 5%;
+  color: var(--dark);
+}
+
+.text-side .intro-text {
+  color: var(--dark);
+  font-size: 1.2em;
+  font-family: roboto;
+  margin-bottom: 3%;
+  line-height: 30px;
+}
+
+.text-side .text-list {
+  margin-bottom: 6%;
+  margin-left: 10%;
+}
+
+.text-side .text-list li {
+  font-family: roboto;
+  padding: 7px 0px;
+  color: var(--dark);
+  list-style-image: url(/assets/images/icon-list.svg);
+  font-size: 1.2em;
+}
+
+.text-side h4 {
+  font-size: 1rem;
+  font-family: roboto;
+  color: var(--dark);
+  margin: 1%;
+}
+
+#container .picture-side {
+  background: url(/assets/images/illustration-sign-up-desktop.svg);
+  width: 50vh;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.text-side form input {
+  display: block;
+  width: 90%;
+  padding: 3.4%;
+  border-radius: 12px;
+  border: solid 0.5px rgb(159, 149, 149);
+  margin-bottom: 4%;
+}
+
+.text-side form input::placeholder {
+  font-family: roboto;
+  font-size: 1.2rem;
+  color: rgb(103, 80, 80);
+}
+
+.text-side form input,
+.text-side form input:focus {
+  font-size: 1.2rem;
+  font-family: roboto;
+  color: var(--dark);
+  outline: solid 0.5px rgb(159, 149, 149);
+}
+
+.text-side form button {
+  display: block;
+  width: 90%;
+  padding: 3.4%;
+  border-radius: 12px;
+  border: solid 0.5px rgb(159, 149, 149);
+  margin-bottom: 4%;
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: roboto;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.email-error {
+  display: flex;
+  width: 100%;
+}
+
+.email-error p {
+  font-family: roboto;
+  font-size: 1.2em;
+  color: red;
+  position: relative;
+  left: 20%;
+  margin-bottom: 5px;
+}
+
+.text-side form button:active {
+  background-color: var(--active);
+  box-shadow: 2px 3px 3px 5px var(--active);
+}
+
+/* The design for small devices */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 340px) and (max-width: 767px) {
+  body {
+    background: var(--dark);
+    font-family: roboto;
+  }
+
+  #container {
+    background: var(--light);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .picture-side {
+    max-width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: url(/assets/images/illustration-sign-up-mobile.svg);
+  }
+
+  .text-side {
+    margin: 4vh 2.5vh;
+  }
+
+  .text-side h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: roboto;
+  }
+
+  .text-list {
+    margin-left: 3vh;
+  }
+
+  .text-list li {
+    list-style-image: url(/assets/images/icon-list.svg);
+    margin: 5% 5%;
+    color: var(--dark);
+  }
+
+  .text-side .intro-text {
+    color: var(--dark);
+    font-family: roboto;
+    margin-bottom: 5%;
+    line-height: 30px;
+  }
+
+  .text-side h4 {
+    font-size: 1rem;
+    font-family: roboto;
+    color: var(--dark);
+    margin-top: 5%;
+    margin-bottom: 4%;
+  }
+
+  .text-side form input {
+    display: block;
+    width: 100%;
+    padding: 5%;
+    border-radius: 10px;
+    border: solid 0px rgb(242, 237, 237);
+    margin-bottom: 7%;
+  }
+
+  .text-side form input::placeholder {
+    font-family: roboto;
+    font-size: 1rem;
+    color: rgb(103, 80, 80);
+  }
+
+  .text-side form input,
+  .text-side form input:focus {
+    font-size: 1.2rem;
+    font-family: roboto;
+    color: var(--dark);
+    outline: solid 0.5px rgb(159, 149, 149);
+  }
+
+  .text-side form button {
+    display: block;
+    width: 100%;
+    padding: 5%;
+    border-radius: 12px;
+    border: solid 0.5px rgb(159, 149, 149);
+    margin-bottom: 4%;
+    background-color: var(--dark);
+    color: var(--light);
+    font-family: roboto;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .text-side form button:active {
+    background-color: var(--active);
+    box-shadow: 2px 3px 3px 5px var(--active);
+  }
+
+  .email-error p {
+    font-family: roboto;
+    font-size: 1em;
+    color: var(--active);
+    margin-left: 1%;
+    position: relative;
+    left: 0%;
+    margin-bottom: 5px;
+  }
+
+  .email-error {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* The design for tablet devices */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background: var(--main-bg);
+  }
+
+  #container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .picture-side {
+    width: 50%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .text-side {
+    width: 50%;
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  .text-side h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .text-list p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .text-side form input,
+  .text-side form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+
+  .email-error {
+    display: block;
+    width: 100%;
+  }
+  .email-error p {
+    font-family: roboto;
+    font-size: 1.2em;
+    color: red;
+    margin-left: 1%;
+    position: relative;
+    left: 0%;
+    margin-bottom: 5px;
+  }
+}

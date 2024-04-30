@@ -1,0 +1,81 @@
+:root {
+  --dark: hsl(234, 29%, 20%);
+  --light: hsl(0, 0%, 100%);
+  --main-bg: hsl(235, 18%, 26%);
+  --active: hsl(4, 100%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--main-bg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container {
+  background-color: var(--light);
+  width: 45vh;
+  height: 55vh;
+  border-radius: 20px;
+  padding: 5vh;
+}
+
+#container img {
+  width: 70px;
+}
+
+#container h1 {
+  font-family: roboto;
+  font-size: 3rem;
+  color: var(--dark);
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+}
+
+#container p {
+  font-family: roboto;
+  color: var(--dark);
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+b {
+  color: var(--main-bg);
+}
+
+#container button {
+  width: 100%;
+  display: block;
+  height: 5vh;
+  font-size: 1.2em;
+  font-family: roboto;
+  color: var(--light);
+  background-color: var(--main-bg);
+  border-radius: 10px;
+  border: none;
+  margin-top: 3vh;
+}
+
+#container button:active {
+  background-color: var(--active);
+}
+
+@media (min-width: 340px) and (max-width: 767px) {
+  #container {
+    padding-top: 20vh;
+    height: 100vh;
+  }
+  #container button {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 35%;
+  }
+}
