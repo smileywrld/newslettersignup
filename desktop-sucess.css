@@ -26,6 +26,7 @@ body {
   height: 55vh;
   border-radius: 20px;
   padding: 5vh;
+  text-align: left;
 }
 
 #container img {
