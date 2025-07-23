@@ -2,11 +2,13 @@ const email = document.querySelector(".email");
 const errorElement = document.querySelector(".error");
 
 const button = document.getElementById("myButton");
+
 button.addEventListener("click", validateMail);
 
 errorElement.innerHTML = "";
-function validateMail() {
-	const emailValue = email.value;
+function validateMail(e) {
+	e.preventDefault();
+
 	let testEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 	if (testEmail.test(emailValue)) {

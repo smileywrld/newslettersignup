@@ -12,6 +12,7 @@
 }
 
 body {
+  height: 100vh;
   background: var(--main-bg);
   display: flex;
   justify-content: center;
@@ -74,9 +75,10 @@ body {
 #container .picture-side {
   background: url(/assets/images/illustration-sign-up-desktop.svg);
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-position: center;
   background-size: cover;
+  border-radius: 10px;
 }
 
 .text-side form input {

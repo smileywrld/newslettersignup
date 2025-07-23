@@ -1,6 +1,8 @@
-let userEmail = localStorage.getItem('Email');
-let regMail = (document.querySelector('.regMail').innerHTML = `${userEmail}`);
+import { emailValue } from "script.js";
+
+let regMail = document.querySelector(".regMail");
+let result = regMail.innerHTML = emailValue;
 
 function closeTab() {
-  window.close();
+	window.close();
 }
