@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="icon" href="/assets/images/favicon-32x32.png" />
-    <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up | Newsletter form with success message</title>
-  </head>
-  <body>
-    <div id="container">
-      <div class="picture-side">
-        <!-- <img src="/assets/images/illustration-sign-up-desktop.svg" alt="" /> -->
-      </div>
 
-      <div class="text-side">
-        <h1>Stay Updated!</h1>
-        <p class="intro-text">
-          Join 60,000+ product managers receiving monthly updates on:
-        </p>
+<head>
+  <link rel="icon" href="/assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | Newsletter form with success message</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
 
-        <ul class="text-list">
-          <li>Product discovery and building what matters</li>
-          <li>Measuring to ensure updates are a success</li>
-          <li>And much more!</li>
-        </ul>
-
-        <div class="email-error">
-          <h4>Email Address</h4>
-          <p class="error"></p>
-        </div>
-        <form action="" method="get">
-          <input class="email" type="email" placeholder="email@company.com" />
-
-          <button type="submit" id="myButton">
-            Subscribe to monthly newsletter
-          </button>
-        </form>
-      </div>
+<body>
+  <div id="container">
+    <div class="picture-side">
+      <!-- <img src="/assets/images/illustration-sign-up-desktop.svg" alt="" /> -->
     </div>
 
-    <script type="module" src="script.js"></script>
-  </body>
+    <div class="text-side">
+      <h1>Stay Updated!</h1>
+      <p class="intro-text">
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+
+      <ul class="text-list">
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+
+      <div class="email-error">
+        <h4>Email Address</h4>
+        <p class="error"></p>
+      </div>
+      <form action="" method="get">
+        <input class="email" type="email" placeholder="email@company.com" />
+
+        <button type="submit" id="myButton">
+          Subscribe to monthly newsletter
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+
 </html>

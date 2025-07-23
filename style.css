@@ -17,6 +17,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
 }
 
 #container {
@@ -321,6 +322,7 @@ body {
     display: block;
     width: 100%;
   }
+
   .email-error p {
     font-family: roboto;
     font-size: 1.2em;
