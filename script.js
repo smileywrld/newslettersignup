@@ -5,8 +5,13 @@ const button = document.getElementById("myButton");
 
 button.addEventListener("click", validateMail);
 
+let emailValue = "";
+
 errorElement.innerHTML = "";
 function validateMail(e) {
+	emailValue = email.value;
+
+	localStorage.setItem("email", emailValue);
 	e.preventDefault();
 
 	let testEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -27,3 +32,5 @@ function validateMail(e) {
 		}, 500);
 	}
 }
+
+export { emailValue, validateMail };

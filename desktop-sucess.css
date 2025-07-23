@@ -23,7 +23,7 @@ body {
 #container {
   background-color: var(--light);
   width: 45vh;
-  height: 55vh;
+  height: 60vh;
   border-radius: 20px;
   padding: 5vh;
   text-align: left;
