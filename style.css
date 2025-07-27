@@ -168,7 +168,7 @@ body {
     background-size: cover;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-image: url(assets/images/illustration-sign-up-mobile.svg);
+    background-image: url(https://raw.githubusercontent.com/smileywrld/newslettersignup/e2cd4f402abb9c7e57c17c9a738e775d027de0d5/assets/images/illustration-sign-up-tablet.svg);
   }
 
   .text-side {
