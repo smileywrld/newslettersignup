@@ -23,7 +23,8 @@ body {
 #container {
   background-color: white;
   width: 70%;
-  height: fit-content;
+  height: 0%;
+  min-height: 85vh;
   padding: 1%;
   border-radius: 10px;
   flex-direction: row-reverse;
@@ -75,7 +76,9 @@ body {
 #container .picture-side {
   background: url(illustration-sign-up-desktop.svg);
   width: 100%;
-  height: 80vh;
+  height: auto;
+  max-height: 800px;
+  aspect-ratio: 1 / 1.2;
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -139,11 +142,7 @@ body {
 
 /* The design for small devices */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 @media (min-width: 340px) and (max-width: 767px) {
   body {
@@ -155,20 +154,18 @@ body {
     background: var(--light);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: fit-content;
     width: 100%;
     padding: 0;
   }
 
-  .picture-side {
-    max-width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
+  #container .picture-side {
+    background: url(illustration-sign-up-desktop.svg);
+    width: 100%;
+    height: 50vh;
     background-position: center;
     background-size: cover;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-image: url(illustration-sign-up-mobile.svg);
+    border-radius: 10px;
   }
 
   .text-side {
@@ -280,11 +277,14 @@ body {
     border-radius: 20px;
   }
 
-  .picture-side {
-    width: 50%;
+  #container .picture-side {
+    background: url(illustration-sign-up-desktop.svg);
+    width: 100%;
     height: auto;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    max-height: 50vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
   }
 
   .text-side {
