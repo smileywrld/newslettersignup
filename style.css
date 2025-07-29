@@ -61,7 +61,7 @@ body {
   font-family: roboto;
   padding: 7px 0px;
   color: var(--dark);
-  list-style-image: url(/assets/images/icon-list.svg);
+  list-style-image: url(icon-list.svg);
   font-size: 1.2em;
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 #container .picture-side {
-  background: url(/assets/images/illustration-sign-up-desktop.svg);
+  background: url(illustration-sign-up-desktop.svg);
   width: 100%;
   height: 80vh;
   background-position: center;
@@ -168,7 +168,7 @@ body {
     background-size: cover;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-image: url(https://raw.githubusercontent.com/smileywrld/newslettersignup/e2cd4f402abb9c7e57c17c9a738e775d027de0d5/assets/images/illustration-sign-up-tablet.svg);
+    background-image: url(illustration-sign-up-mobile.svg));
   }
 
   .text-side {
